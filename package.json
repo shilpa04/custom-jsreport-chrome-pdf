@@ -1,0 +1,19 @@
+{
+  "name": "custom-jsreport-chrome-pdf",
+  "version": "1.0.0",
+  "description": "no sandbox argument while launching puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shilpa04/custom-jsreport-chrome-pdf.git"
+  },
+  "author": "Shilpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shilpa04/custom-jsreport-chrome-pdf/issues"
+  },
+  "homepage": "https://github.com/shilpa04/custom-jsreport-chrome-pdf#readme"
+}
