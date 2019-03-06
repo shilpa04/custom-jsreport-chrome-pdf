@@ -1,19 +1,97 @@
 {
-  "name": "custom-jsreport-chrome-pdf",
-  "version": "1.0.0",
-  "description": "no sandbox argument while launching puppeteer",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "custom-jsreport-chrome-pdf@1.0.0",
+      "/home/stpl/test/LMSScratchBO"
+    ]
+  ],
+  "_from": "custom-jsreport-chrome-pdf@1.0.0",
+  "_id": "custom-jsreport-chrome-pdf@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Kb9ECL6VJ1Rl1+7+mLzWWsk4WfExHakJnQbQS07XAQJzwDnWIxk0/XUpSyw4yHOM47wKiUwbGz7H3tHLzdwiQw==",
+  "_location": "/custom-jsreport-chrome-pdf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "custom-jsreport-chrome-pdf@1.0.0",
+    "name": "custom-jsreport-chrome-pdf",
+    "escapedName": "custom-jsreport-chrome-pdf",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shilpa04/custom-jsreport-chrome-pdf.git"
+  "_requiredBy": [
+    "/customjsreport"
+  ],
+  "_spec": "1.1.5",
+  "_where": "/home/stpl/test/LMSScratchBO",
+  "author": {
+    "name": "Shilpa Nirankari"
   },
-  "author": "Shilpa",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/shilpa04/custom-jsreport-chrome-pdf/issues"
   },
-  "homepage": "https://github.com/shilpa04/custom-jsreport-chrome-pdf#readme"
+  "dependencies": {
+    "node.extend": "2.0.0",
+    "uuid": "3.2.1"
+  },
+  "description": "jsreport recipe which is rendering pdf from html using headless chrome and added no sandbox argument while launching puppeteer",
+  "devDependencies": {
+    "babel-eslint": "8.2.5",
+    "eslint": "4.19.1",
+    "eslint-config-standard-jsx": "5.0.0",
+    "eslint-plugin-babel": "5.1.0",
+    "in-publish": "2.0.0",
+    "jsreport-core": "2.1.0",
+    "jsreport-debug": "2.0.0",
+    "jsreport-handlebars": "2.0.0",
+    "jsreport-studio-dev": "1.3.0",
+    "jsreport-templates": "2.0.0",
+    "mocha": "5.2.0",
+    "parse-pdf": "1.0.0",
+    "puppeteer": "1.4.0",
+    "should": "13.2.1",
+    "standard": "11.0.1"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "files": [
+    "lib",
+    "studio",
+    "index.js",
+    "jsreport.config.js"
+  ],
+  "homepage": "https://github.com/shilpa04/custom-jsreport-chrome-pdf",
+  "keywords": [
+    "jsreport",
+    "pdf"
+  ],
+  "license": "MIT",
+  "name": "custom-jsreport-chrome-pdf",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shilpa04/custom-jsreport-chrome-pdf.git"
+  },
+  "scripts": {
+    "build": "jsreport-studio-build",
+    "prepublish": "in-publish && jsreport-studio-build || not-in-publish",
+    "run": "npm run build && jsreport-studio-start --httpPort 5488 --run-only",
+    "start": "jsreport-studio-start --httpPort 5488",
+    "test": "mocha test --timeout 15000 && standard"
+  },
+  "standard": {
+    "ignore": [
+      "main.js",
+      "main.js.map"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
+  },
+  "version": "1.0.0"
 }
